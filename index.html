@@ -6,24 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
 <body>
 
-    <div id="app" class="">
-        <h2>To-do List</h2>
+    <div id="app" class="wrapper">
+        <header>To-do List</header>
 
         <!-- 輸入框、新增 -->
-        <input v-model="newTask" placeholder="任務">
-        <button @click="addTask">新增</button>
+        <div class="inputField">
+        <input v-model="newTask" placeholder="任務"@keyup.enter="addTask">
+        <button @click="addTask"><i class="uil uil-plus"></i></button>
+        </div>
 
         <!-- 任務列表 -->
-        <ul>
+        <ul class="todoList">
             <li v-for="(task, index) in tasks" :key="index">
                 <p>{{task}}</p>
-                <button @click="removeTask(index)">刪除</button>
+                <button @click="removeTask(index)"><i class="uil uil-trash"></i></button>
             </li>
         </ul>
 
