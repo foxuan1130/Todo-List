@@ -13,11 +13,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-.icon {
-    font-size: 5vw;
-    max-width: 40px; 
-    max-height: 40px; 
-}
+
 .wrapper {
     background: #fff;
     max-width: 400px;
@@ -56,6 +52,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.35s ease;
+}
+.inputField button:hover{
+    background: #28517a;
+}
+.inputField button i{
+    font-size: 23px;
 }
 .todoList {
     list-style: none;
@@ -76,7 +79,7 @@ header {
 .todoList li p {
     flex: 1;
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     margin: 0;
     word-break: break-word;
     width: 80%;
@@ -88,3 +91,12 @@ header {
     cursor: pointer;
     align-items: center;
 }
+.todoList button i {
+    font-size: 23px;
+    transition: color 0.35s ease;
+}
+.todoList button:hover i {
+    color: black; 
+    
+}
+
