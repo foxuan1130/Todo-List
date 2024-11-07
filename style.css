@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', 'Source Han Sans', sans-serif;
+    font-weight: bold;
     box-sizing: border-box;
 }
 body {
@@ -44,7 +45,7 @@ header {
     height: 40px;
     border: none;
     color: #fff;
-    background: #b595de;
+    background: #95b3de;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -70,6 +71,7 @@ header {
 .todoList li p {
     flex: 1;
     text-align: left;
+    font-size: 16px;
     margin: 0;
     word-break: break-word;
     width: 80%;
